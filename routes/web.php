@@ -32,4 +32,6 @@ Route::get('/user/{nome}', function ($nome){
 //     // echo 'Nome: '. $nome.''.$apelido;
 //     echo "Nome: $nome $apelido";
 // });
-Route::get('/user/{nome}/{apelido}', 'Main@user');
+// Route::get('/user/{nome}/{apelido}', 'Main@user');
+
+Route::get('/nome/{nome}/{idade}/{apelido?}', 'Main@nome');

@@ -6,10 +6,9 @@ use Illuminate\Http\Request;
 
 class Main extends Controller
 {
-        // return view('pagina2', ['nome'=>'Nathalia Barros']);
-        public function user($nome, $apelido){
-          return view('user', ['nome' => $nome, 'apelido' => $apelido]);
+    // Route::get('/nome/{nome}/{idade}/{apelido?}', 'Main@nome');
+        public function  nome($nome, $idade, $apelido = ''){
+        return view('nome',['nome' => $nome, 'apelido'=>$apelido, 'idade'=>$idade]);
 
-        }
-
+    }
 }
