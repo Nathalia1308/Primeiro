@@ -23,10 +23,10 @@ Route::get('/', function () {return view('welcome');});
 // //Route::view('/pagina2', 'pagina2', ['nome'=>'Nathalia Barros']);
 // Route::get('/pagina2','Main@mostrarNome');
 
-Route::get('/user/{nome}', function ($nome){
-    // echo 'Nome: '. $nome.''.$apelido;
-    echo "Nome: $nome ";
-});
+// Route::get('/user/{nome}', function ($nome){
+//     // echo 'Nome: '. $nome.''.$apelido;
+//     echo "Nome: $nome ";
+// });
 
 // Route::get('/user/{nome}/{apelido}', function ($nome, $apelido){
 //     // echo 'Nome: '. $nome.''.$apelido;
@@ -34,4 +34,7 @@ Route::get('/user/{nome}', function ($nome){
 // });
 // Route::get('/user/{nome}/{apelido}', 'Main@user');
 
-Route::get('/nome/{nome}/{idade}/{apelido?}', 'Main@nome');
+// Route::get('/nome/{nome}/{idade}/{apelido?}', 'Main@nome');
+Route::get('/teste', 'Main@home')->name('inicio');
+Route::get('/servicos', 'Main@servicos')->name('servicos');
+Route::get('/contactos', 'Main@contactos')->name('contactos');
